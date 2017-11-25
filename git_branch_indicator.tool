@@ -35,7 +35,7 @@ echo -e $gitver
 }
 
 #It's important to escape colors with \[ to indicate the length is 0 this prompt will display full path
-PS1='\[${c_yellow}\]\u\[${c_sgr0}\]@\[${c_purple}\]\h\[${c_cyan}\]|$(pwd)|\[${c_sgr0}\]\[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]$ '
+# PS1='\[${c_yellow}\]\u\[${c_sgr0}\]@\[${c_purple}\]\h\[${c_cyan}\]|$(pwd)|\[${c_sgr0}\]\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]$'
 
 #It's important to escape colors with \[ to indicate the length is 0 this prompt will display short path
-PS1='\[${c_yellow}\]\u\[${c_sgr0}\]@\[${c_purple}\]\h\[${c_cyan}\]|\W|\[${c_sgr0}\]\[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]$ '
+PS1='\[${c_yellow}\]\u\[${c_sgr0}\]@\[${c_purple}\]\h\[${c_cyan}\]|\W|\[${c_sgr0}\]\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]$ '
